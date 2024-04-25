@@ -1,22 +1,22 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: fraud
-spec:
-  selector:
-    matchLabels:
-      app: fraud
-  template:
-    metadata:
-      labels:
-        app: fraud
-    spec:
-      containers:
-      - name: fraud
-        image: priajiabror/fraud:latest
-        resources:
-          limits:
-            memory: "250Mi"
-            cpu: "500m"
-        ports:
-        - containerPort: 18081
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: fraud
+# spec:
+#   selector:
+#     matchLabels:
+#       app: fraud
+#   template:
+#     metadata:
+#       labels:
+#         app: fraud
+#     spec:
+#       containers:
+#       - name: fraud
+#         image: priajiabror/fraud:latest
+#         resources:
+#           limits:
+#             memory: "250Mi"
+#             cpu: "500m"
+#         ports:
+#         - containerPort: 18081

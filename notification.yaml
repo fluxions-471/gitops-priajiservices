@@ -1,22 +1,22 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: notification
-spec:
-  selector:
-    matchLabels:
-      app: notification
-  template:
-    metadata:
-      labels:
-        app: notification
-    spec:
-      containers:
-      - name: notification
-        image: priajiabror/notification:latest
-        resources:
-          limits:
-            memory: "250Mi"
-            cpu: "500m"
-        ports:
-        - containerPort: 18082
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: notification
+# spec:
+#   selector:
+#     matchLabels:
+#       app: notification
+#   template:
+#     metadata:
+#       labels:
+#         app: notification
+#     spec:
+#       containers:
+#       - name: notification
+#         image: priajiabror/notification:latest
+#         resources:
+#           limits:
+#             memory: "250Mi"
+#             cpu: "500m"
+#         ports:
+#         - containerPort: 18082
