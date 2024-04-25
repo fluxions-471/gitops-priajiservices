@@ -14,9 +14,5 @@ spec:
       containers:
       - name: apigw
         image: priajiabror/apigw:latest
-        resources:
-          limits:
-            memory: "256Mi"
-            cpu: "500m"
         ports:
         - containerPort: 18083
